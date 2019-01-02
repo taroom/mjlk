@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\ci\\merchant"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\yii2\\advanced"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\smkbejagung-001"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\sp3dclient"
+		},
+		{
+			"path": "C:\\Users\\Intel\\Documents\\yii2api\\api"
+		},
+		{
+			"path": "C:\\Users\\Intel\\Documents\\electron\\electron-quick-start"
+		},
+		{
+			"path": "C:\\Users\\Intel\\demidesa\\e-chart-imp"
+		}
+	]
+}
