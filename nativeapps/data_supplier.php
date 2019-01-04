@@ -61,8 +61,9 @@ if (!isset($_POST['proses']) and (isset($_POST['proses'])=="form1"))
           <?php echo "</a>"; ?>  
           </td>
         </tr>
-        <?php		
-		while($row2=fetch(query($conn, $qtmpil_sup))){
+        <?php
+        $v = query($conn, $qtmpil_sup);
+		while($row2=fetch($v)){
 			if ($warna==$warna1){
 				$warna=$warna2;
 			}

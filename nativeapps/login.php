@@ -12,12 +12,15 @@ $password = md5($_POST["password"]);
 // query untuk mendapatkan record dari username
 
 $query = "SELECT * FROM account WHERE username = '$username'";
-
+var_dump($_POST['username']);
+var_dump($query);
 $data = fetch(query($conn, $query));
+
+// var_dump($data);
 
 // cek kesesuaian password
 
-if (($username == $data['username'])and($password == $data['password']))
+if (($username == $data['username']) && ($password == $data['password']))
 {
 
 	// menyimpan username dan level ke dalam session
@@ -28,11 +31,11 @@ if (($username == $data['username'])and($password == $data['password']))
 	
 	// tampilkan menu
 	lompat_ke("index.php");
-
 }
 else
 {
-	lompat_ke("form_login.php");
+	// lompat_ke("form_login.php");
+	var_dump($_SESSION);
 }
 
 ?>

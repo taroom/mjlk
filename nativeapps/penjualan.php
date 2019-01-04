@@ -86,7 +86,8 @@ body {
   <tbody>
   <?php 
   		$pesan="SELECT * FROM jual ORDER BY inc DESC LIMIT 25";
-		while($row=fetch(query($conn, $pesan))){
+      $v = query($conn, $query);
+		while($row=fetch($v)){
 			if ($warna==$warna1){
 				$warna=$warna2;
 			}

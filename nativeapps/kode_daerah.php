@@ -42,7 +42,8 @@ $qtmpil_barang="select * from kode_daerah order by id asc";
         <tbody>
         <?php 
           $no=1;
-          while($row1=fetch(query($conn, $qtmpil_barang))){
+          $d = query($conn, $qtmpil_barang);
+          while($row1=fetch($d)){
             if ($warna==$warna1){
               $warna=$warna2;
             }

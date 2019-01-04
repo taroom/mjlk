@@ -41,8 +41,8 @@ if ($_SESSION['level'] == "admin")
   <?php 
   		$pesan="SELECT * FROM beli WHERE tgl_trans BETWEEN '$_POST[tgl_awal]' AND '$_POST[tgl_akhir]'";
 		// var_dump($pesan);
-		
-		while($row=fetch(query($conn, $query))){
+		$v = query($conn, $query);
+		while($row=fetch($v)){
 			if ($warna==$warna1){
 				$warna=$warna2;
 			}

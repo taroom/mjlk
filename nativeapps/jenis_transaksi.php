@@ -28,7 +28,8 @@ if ($_SESSION['level'] == "admin")
   $warna2="#cfdde7";
   $warna=$warna1;
     $akun="SELECT * FROM jenis_transaksi";
-  while($dakun=fetch(query($conn, $akun)))
+    $v = query($conn, $query);
+  while($dakun=fetch($v))
   {
     if ($warna==$warna1){
         $warna=$warna2;

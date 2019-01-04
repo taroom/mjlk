@@ -50,7 +50,7 @@ require_once "library/fungsi_standar.php";
 		//pemanggilan fungsi penambahan
 		$a="SELECT * FROM barang";
 		$b="SELECT inc FROM barang ORDER BY inc DESC LIMIT 1";
-		$inc=penambahan($a, $b);
+		$inc=penambahan($conn, $a, $b);
 	echo "	<div id=judulHalaman><strong>Form input data barang</strong></div>
         <table border=0 cellspacing=2 cellpadding=0>
           <tr>

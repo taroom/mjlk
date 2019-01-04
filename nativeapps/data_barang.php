@@ -77,7 +77,8 @@ if (!isset($_POST['proses']) and (isset($_POST['proses'])=="form1"))
         <tbody>
         <?php 
 					$no=1;
-					while($row1=fetch(query($conn, $qtmpil_barang))){
+          $q = query($conn, $qtmpil_barang);
+					while($row1=fetch($q)){
 						if ($warna==$warna1){
 							$warna=$warna2;
 						}
@@ -96,7 +97,7 @@ if (!isset($_POST['proses']) and (isset($_POST['proses'])=="form1"))
           <td><?php echo "<a href=index.php?halaman=form_ubah_data&kode=barang_update&id=$row1[inc]>"; ?>
           	 <div id="tombol">ubah</div>
 			 <?php echo "</a>"; ?>
-          <a href="<?php echo "proses.php?proses=barang_delete&id=$row1[inc]>"; ?>" onclick="return confirm('Apakah Anda akan menghapus data buah ini ?')">
+          <a href="<?php echo "proses.php?proses=barang_delete&id=$row1[inc]"; ?>" onclick="return confirm('Apakah Anda akan menghapus data buah ini ?')">
           <div id="tombol">hapus</div>
 		  </a>
           </td>

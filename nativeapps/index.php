@@ -90,6 +90,7 @@ else
 }
 else
 {
+  // var_dump($_SESSION);
 	lompat_ke("form_login.php");
 }
 ?>

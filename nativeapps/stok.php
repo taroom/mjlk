@@ -135,7 +135,8 @@ if (!isset($_POST['proses']) and (isset($_POST['proses'])=="form1"))
   <tbody>
     <?php
 		$no=1;
-		while($data=fetch(query($conn, $sql)))
+    $v = query($conn, $query);
+		while($data=fetch($v))
 		{
 	echo "
   <tr>
